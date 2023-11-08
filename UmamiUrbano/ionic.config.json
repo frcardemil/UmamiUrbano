@@ -1,0 +1,7 @@
+{
+  "name": "UmamiUrbano",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
