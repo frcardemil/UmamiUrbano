@@ -7,3 +7,7 @@ Parte 2: https://www.youtube.com/watch?v=oIjdv6FYBs4
 https://www.npmjs.com/package/@angular/fire
 
 https://github.com/angular/angularfire/blob/HEAD/docs/install-firebase-tools.md#1-install-package
+
+https://ia-pplication.com/blog/ionic-geolocation-guia-integracion
+
+https://www.youtube.com/watch?v=BM70fDqUo3c
