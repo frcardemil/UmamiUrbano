@@ -11,10 +11,22 @@ export class CustomizadorComponent  implements OnInit {
   @Input() control!: FormControl;
   @Input() type!: string;
   @Input() label!: string;
-  @Input() autocompletar!: string;
+  @Input() autocomplete!: string;
+
+  isPassword!: boolean;
+  hide: boolean = true;
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    if(this.type == 'password') this.isPassword = true;
+  }
+
+  showOrHidePassword(){
+    this.hide = !this.hide;
+    if(this.hide) this.type = 'password';
+    else this.type = 'text';
+
+  }
 
 }
