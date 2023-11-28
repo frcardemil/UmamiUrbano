@@ -10,18 +10,18 @@
     icon="mail-outline"
     [control]="form.controls.email"
     type="email"
-    label="correo"></app-customizador>
+    label="Correo"></app-customizador>
 
    <div class="validators" *ngIf="form.controls.email.errors && form.controls.email.touched">
     <div *ngIf="form.controls.email.errors?. ['required']">El correo es requerido</div>
-    <div *ngIf="form.controls.email.errors?. ['email']">Ingrese un correo valido</div>
+    <div *ngIf="form.controls.email.errors?. ['email']">Ingrese un correo válido</div>
    </div>
 
     <app-customizador 
     icon="lock-closed-outline"
     [control]="form.controls.password"
     type="password"
-    label="contraseña" 
+    label="Contraseña" 
     ></app-customizador>
 
     <div class="validators" *ngIf="form.controls.password.errors && form.controls.password.touched">
@@ -32,6 +32,15 @@
      <ion-button  expand="block"  mode="ios" class="submit" type="submit" [disabled]="form.invalid">
       Ingresar
      </ion-button>
+     
+     <div>
+      <a [routerLink]="['/recuperar']">¿Olvidó su contraseña?</a>
+     </div>
+
+     <div>
+      <p >¿No tienes una cuenta?<a [routerLink]="['/registro']"> Crea una aquí</a></p>
+     </div>
+     
   </form>
 
  </div>
